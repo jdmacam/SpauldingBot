@@ -44,9 +44,32 @@ client.on('message', async message => {
 		// Joining the channel and creating a VoiceConnection.
 		message.member.voice.channel.join().then(VoiceConnection => {
 			VoiceConnection.play("./assets/goodmtndew.mp3", {volume: 0.4}).on("finish", () => VoiceConnection.disconnect());
+			message.channel.send(`${mdew} ${mdew} ${mdew}`);
+		}).catch(e => console.log(e))
+	}
+
+	else if (message.content == '.potion'){
+		console.log(".potion")
+		// Joining the channel and creating a VoiceConnection.
+		message.member.voice.channel.join().then(VoiceConnection => {
+			VoiceConnection.play("./assets/potion.wav", {volume: 1.0}).on("finish", () => VoiceConnection.disconnect());
 			message.reply("Playing...");
 		}).catch(e => console.log(e))
 	}
+
+	else if (message.content == '.knock'){
+		console.log(".knock")
+		// Joining the channel and creating a VoiceConnection.
+		message.member.voice.channel.join().then(VoiceConnection => {
+			VoiceConnection.play("./assets/knock.mp3", {volume: 1.0}).on("finish", () => VoiceConnection.disconnect());
+			message.reply("Playing...");
+		}).catch(e => console.log(e))
+	}
+
+	else if (message.content === ".test") {
+		const mdew = client.emojis.cache.find(emoji => emoji.name === "mtndew");
+		message.channel.send(`${mdew} ${mdew} ${mdew}`);
+	  }
 });
 
 
