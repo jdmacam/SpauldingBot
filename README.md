@@ -1,6 +1,8 @@
 # SpauldingBot
-Discord bot inspired for my Discord server.
+Discord bot for my personal Discord server.
 
-Side project for Summer 2021 working with Node.js and discord.js, and 
-hosted on EC2 free tier instance.
+Side project for Summer 2021 to get experience with with Node.js, the discord.js library, and AWS EC2 instances.
 
+WARNING: Contains NSFW content and stupid inside jokes
+
+![Captain_Spaulding](assets/spaulding.jpg)
