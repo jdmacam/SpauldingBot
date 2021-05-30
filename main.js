@@ -68,7 +68,6 @@ client.on('message', async message => {
 
 	else if (message.content === ".test") {
 		const mdew = client.emojis.cache.find(emoji => emoji.name === "mtndew");
-		message.channel.send(`${mdew} ${mdew} ${mdew}`);
 	  }
 });
 
