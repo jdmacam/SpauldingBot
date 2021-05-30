@@ -11,19 +11,39 @@ client.once('ready', () => {
 // SB listens to messages for commands
 client.on('message', async message => {
 	if (message.content === 'clown.ping') {
+		console.log("Pinging bot")
 		message.channel.send('`The clown\'s in town! Yayayayayaya! 🤡`');
 	}
 
 	else if (message.content === 'clown.d20'){
+		console.log("Rollin' D20")
 		var roll = Math.floor(Math.random() * 20) + 1;
 		message.channel.send(roll + ' 🤡🎲');
 	}
 
 	else if (message.content == 'clown.call'){
+		console.log("clown.call")
 		// Joining the channel and creating a VoiceConnection.
 		message.member.voice.channel.join().then(VoiceConnection => {
-			// Playing the music, and, on finish, disconnecting the bot.
 			VoiceConnection.play("./assets/chicken.mp3").on("finish", () => VoiceConnection.disconnect());
+			message.reply("Playing...");
+		}).catch(e => console.log(e))
+	}
+
+	else if (message.content == '.iwanttosee'){
+		console.log(".iwanttosee")
+		// Joining the channel and creating a VoiceConnection.
+		message.member.voice.channel.join().then(VoiceConnection => {
+			VoiceConnection.play("./assets/iwanttosee.mp3", {volume: 0.5}).on("finish", () => VoiceConnection.disconnect());
+			message.reply("Playing...");
+		}).catch(e => console.log(e))
+	}
+
+	else if (message.content == '.goodmtndew'){
+		console.log(".goodmtndew")
+		// Joining the channel and creating a VoiceConnection.
+		message.member.voice.channel.join().then(VoiceConnection => {
+			VoiceConnection.play("./assets/goodmtndew.mp3", {volume: 0.4}).on("finish", () => VoiceConnection.disconnect());
 			message.reply("Playing...");
 		}).catch(e => console.log(e))
 	}
