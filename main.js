@@ -3,7 +3,6 @@ const Discord = require('discord.js');
 // Create Discord client/bot object
 const client = new Discord.Client();
 
-require('dotenv').config()
 // Message that will print when SB comes online
 client.once('ready', () => {
     console.log('The clown\'s in town! Yayayayayaya!')
@@ -16,5 +15,7 @@ client.on('message', message => {
 	}
 });
 
-// login to the SpauldingBot, must be the last action
+
+// login to the SpauldingBot using dotenv
+require('dotenv').config()
 client.login(process.env.TOKEN)
