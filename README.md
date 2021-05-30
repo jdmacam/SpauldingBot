@@ -5,4 +5,4 @@ Side project for Summer 2021 to get experience with with Node.js, the discord.js
 
 WARNING: Contains NSFW content and stupid inside jokes
 
-[Captain_Spaulding](../assets/spaulding.jpg)
+![Captain_Spaulding](../assets/spaulding.jpg)
