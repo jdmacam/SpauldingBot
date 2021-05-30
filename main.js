@@ -8,10 +8,15 @@ client.once('ready', () => {
     console.log('The clown\'s in town! Yayayayayaya!')
 })
 
+// SB listens to messages for commands
 client.on('message', message => {
 	if (message.content === 'clown.ping') {
-		// send back "Pong." to the channel the message was sent in
 		message.channel.send('`The clown\'s in town! Yayayayayaya! 🤡`');
+	}
+
+	else if (message.content === 'clown.d20'){
+		var roll = Math.floor(Math.random() * 20) + 1;
+		message.channel.send(roll + ' 🤡🎲');
 	}
 });
 
