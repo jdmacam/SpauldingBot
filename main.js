@@ -3,6 +3,7 @@ const Discord = require('discord.js');
 // Create Discord client/bot object
 const client = new Discord.Client();
 
+require('dotenv').config()
 // Message that will print when SB comes online
 client.once('ready', () => {
     console.log('The clown\'s in town! Yayayayayaya!')
