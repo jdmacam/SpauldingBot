@@ -9,7 +9,7 @@ client.once('ready', () => {
 })
 
 client.on('message', message => {
-	if (message.content === '$$ping') {
+	if (message.content === 'clown.ping') {
 		// send back "Pong." to the channel the message was sent in
 		message.channel.send('`The clown\'s in town! Yayayayayaya! 🤡`');
 	}
