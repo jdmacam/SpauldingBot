@@ -26,7 +26,6 @@ client.on('message', async message => {
 		// Joining the channel and creating a VoiceConnection.
 		message.member.voice.channel.join().then(VoiceConnection => {
 			VoiceConnection.play("./assets/chicken.mp3").on("finish", () => VoiceConnection.disconnect());
-			message.reply("Playing...");
 		}).catch(e => console.log(e))
 	}
 
@@ -35,7 +34,6 @@ client.on('message', async message => {
 		// Joining the channel and creating a VoiceConnection.
 		message.member.voice.channel.join().then(VoiceConnection => {
 			VoiceConnection.play("./assets/iwanttosee.mp3", {volume: 0.5}).on("finish", () => VoiceConnection.disconnect());
-			message.reply("Playing...");
 		}).catch(e => console.log(e))
 	}
 
@@ -44,7 +42,6 @@ client.on('message', async message => {
 		// Joining the channel and creating a VoiceConnection.
 		message.member.voice.channel.join().then(VoiceConnection => {
 			VoiceConnection.play("./assets/goodmtndew.mp3", {volume: 0.4}).on("finish", () => VoiceConnection.disconnect());
-			message.channel.send(`${mdew} ${mdew} ${mdew}`);
 		}).catch(e => console.log(e))
 	}
 
@@ -53,7 +50,6 @@ client.on('message', async message => {
 		// Joining the channel and creating a VoiceConnection.
 		message.member.voice.channel.join().then(VoiceConnection => {
 			VoiceConnection.play("./assets/potion.wav", {volume: 1.0}).on("finish", () => VoiceConnection.disconnect());
-			message.reply("Playing...");
 		}).catch(e => console.log(e))
 	}
 
@@ -62,7 +58,6 @@ client.on('message', async message => {
 		// Joining the channel and creating a VoiceConnection.
 		message.member.voice.channel.join().then(VoiceConnection => {
 			VoiceConnection.play("./assets/knock.mp3", {volume: 1.0}).on("finish", () => VoiceConnection.disconnect());
-			message.reply("Playing...");
 		}).catch(e => console.log(e))
 	}
 
