@@ -1,7 +1,7 @@
 # SpauldingBot
 Discord bot for my personal Discord server.
 
-Side project for Summer 2021 to get experience with with Node.js, the discord.js library, and AWS EC2 instances.
+Side project for Summer 2021 to get experience with with Node.js, the discord.js library, and setting up AWS EC2 instances.
 
 WARNING: Contains NSFW content and stupid inside jokes
 
